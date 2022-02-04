@@ -1,0 +1,110 @@
+:root{
+    --main-background: hsl(233, 47%, 7%);
+    --card-background: hsl(244, 38%, 16%);
+    --accent: hsl(277, 64%, 61%);
+
+    --main-heading-stats: hsl(0, 0%, 100%);
+    --main-paragraph: hsla(0, 0%, 100%, 0.75);
+    --stat-headings: hsla(0, 0%, 100%, 0.6);
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: var(--main-background);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.grid-container{
+
+    width: 70%;
+    height: 27.875rem;
+    background-color: var(--card-background);
+    border-radius: 10px;
+
+    display: grid;
+     grid-template-areas: 
+    "main aside"
+    ;
+    grid-template-columns: 1fr 1fr;
+
+}
+main{
+    height: 100%;
+    padding: 3.5rem;
+    grid-area: "main" ;
+    margin-right: 2rem ;
+}
+aside{
+    height: 100%;
+    grid-area: "aside";
+    position: relative;
+}
+.color{
+    height: 446px;
+    width: 540px;
+    position: absolute;
+    z-index: 3;
+    right: 0;
+    background-color: hsla(277, 99%, 31%, 0.377);
+    border-radius: 0 10px 10px 0;
+}
+img{
+    position: absolute;
+    right: 0;
+    border-radius: 0 10px 10px 0;
+}
+h1{
+    font-family: 'Inter', sans-serif;
+    color: var(--main-heading-stats);
+    font-weight: 700;
+    font-size: 38px;
+    padding-bottom: 2rem;
+    line-height: 2.5rem;
+}
+a{
+    cursor: text;
+    color: var(--accent);
+}
+.main-p{
+    padding-bottom: 6rem;
+    font-family: 'Lexend Deca', sans-serif;
+    color: var(--stat-headings);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.65rem;
+    text-align: left;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 1rem;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.container p{
+    font-family: 'Inter', sans-serif;
+    color: var(--stat-headings);
+    text-transform: uppercase;
+    margin-bottom: .45rem;   
+    font-size: 12px;
+    font-weight: 400;
+}
+main p:first-child{
+    font-family: 'Inter', sans-serif;
+    color: var(--main-heading-stats);
+    font-weight: 700;
+    font-size: 20px;
+
+}
