@@ -75,7 +75,7 @@ a{
     color: var(--accent);
 }
 .main-p{
-    padding-bottom: 6rem;
+    padding-bottom: 96px;
     font-family: 'Lexend Deca', sans-serif;
     color: var(--stat-headings);
     font-weight: 400;
